@@ -14,7 +14,7 @@ class SimpleEditTextActivityOne : AppCompatActivity() {
         val btn = findViewById<Button>(R.id.button)
         val editText = findViewById<EditText>(R.id.editText)
         btn.setOnClickListener {
-            val message = editText.getText().toString()
+            val message = editText.text.toString()
             val intent = Intent(this, SimpleEditTextActivityTwo::class.java)
             if (!message.isNullOrEmpty()) {
                 intent!!.putExtra("data", message)
