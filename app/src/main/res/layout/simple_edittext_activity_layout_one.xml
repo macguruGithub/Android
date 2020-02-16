@@ -6,13 +6,14 @@
     <EditText
         android:id="@+id/editText"
         android:layout_width="match_parent"
-        android:layout_height="140dp"
+        android:layout_height="@dimen/sample_edittext_activity_layout_edittext_height"
         android:ems="10"
+        android:hint="@string/sample_edittext_activity_layout_edittext_hint_value"
         android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Save" />
+        android:text="@string/sample_edittext_activity_layout_button_name" />
 </LinearLayout>
